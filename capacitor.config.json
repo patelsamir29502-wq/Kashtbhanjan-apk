@@ -1,0 +1,9 @@
+{
+  "appId": "com.kasthbhanjan.jobcard",
+  "appName": "Shree Kasthbhanjan",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  }
+}

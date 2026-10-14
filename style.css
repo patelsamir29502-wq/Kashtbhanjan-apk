@@ -1,0 +1,30 @@
+
+:root{--bg:#e8ebee;--card:#fff;--ink:#161b22;--mut:#667180;--ac:#f2b01e;--wa:#1fa855;--warn:#c2410c;--line:#e1e5ea;--sh:0 1px 2px #1c242e14,0 10px 24px -14px #1c242e55}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1116;--card:#171d25;--ink:#eaeef3;--mut:#8f9bab;--line:#252e3a;--warn:#ff8a4c;--sh:0 10px 24px -14px #000}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 "Segoe UI",system-ui,Roboto,sans-serif;padding-bottom:100px}
+header{background:repeating-linear-gradient(90deg,#ffffff08 0 2px,transparent 2px 14px),linear-gradient(135deg,#0f141a,#232d3a);color:#fff;padding:16px 18px;padding-top:calc(16px + env(safe-area-inset-top,0px));position:sticky;top:0;z-index:5;border-bottom:3px solid var(--ac);display:flex;gap:12px;align-items:center}
+header svg{flex:none;color:var(--ac)}header b{font-size:19px;font-weight:800;letter-spacing:-.01em;display:block;line-height:1.2}header small{opacity:.65;font-size:12.5px}
+main{padding:14px;max-width:720px;margin:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px;box-shadow:var(--sh)}
+input,select{width:100%;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit;outline:0}
+input:focus,select:focus{border-color:var(--ac);box-shadow:0 0 0 3px #f2b01e33}
+label{display:block;font-size:12.5px;font-weight:600;color:var(--mut);margin:10px 0 4px}
+.row{display:flex;gap:8px;align-items:center}.row>*{flex:1}
+.btn{border:0;border-radius:12px;padding:13px 16px;font:700 14.5px inherit;font-family:inherit;background:var(--ac);color:#1a1200;cursor:pointer;transition:transform .1s}
+.btn:active{transform:scale(.97)}.btn.wa{background:var(--wa);color:#fff}.btn.g{background:var(--line);color:var(--ink)}.btn.s{padding:8px 12px;font-size:13px;flex:none;border-radius:10px}
+.btn.d{background:transparent;color:var(--warn);border:1.5px solid var(--warn)}
+nav{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));max-width:696px;margin:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 30px -10px #0006;display:flex;gap:4px;padding:6px;z-index:6}
+nav button{flex:1;background:none;border:0;color:var(--mut);padding:8px 0;font:600 11.5px inherit;font-family:inherit;border-radius:16px;cursor:pointer}
+nav button.on{background:var(--ac);color:#1a1200}nav svg{display:block;margin:0 auto 2px}
+.item{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.item input[type=checkbox]{width:24px;height:24px;flex:none;accent-color:#d99a00}.item span{flex:1}.item input[type=number]{width:104px;flex:none;text-align:right;font-weight:600}
+.tot{font-size:22px;font-weight:800;letter-spacing:-.02em}.pill{font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--line)}
+.pill.r{background:#fde2d3;color:#9a3412}.pill.o{background:#fff1c2;color:#7a5b00}.pill.k{background:#d5f0e6;color:#0b5c4b}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}.mut{color:var(--mut);font-size:13px}
+.big{display:flex;gap:10px}.big .card{flex:1;margin:0;text-align:center}
+.plate{display:inline-block;background:#f6cf1b;color:#111;border:2px solid #111;border-radius:6px;padding:0 8px;font:800 14px/1.55 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.08em}
+.pin{font:800 19px ui-monospace,Menlo,Consolas,monospace;letter-spacing:.12em;text-align:center;background:#f6cf1b;color:#111;border:2px solid #111}.pin::placeholder{color:#111a}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--sh);cursor:pointer}.stat b{display:block;font-size:21px;font-weight:800;letter-spacing:-.02em}.stat span{font-size:12px;color:var(--mut)}
+.sum{background:linear-gradient(135deg,#0f141a,#232d3a);color:#fff;border-color:#0f141a}.sum label{color:#ffffffb0}.sum input{background:#ffffff14;border-color:#ffffff30;color:#fff}.sum #B{color:#ffc15e!important}.note{min-height:72px;resize:vertical;width:100%;padding:12px;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit}.mini{font-size:12px;color:var(--mut)}
